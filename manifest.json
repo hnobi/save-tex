@@ -19,10 +19,7 @@
   "scripts": ["event.js"],
   "persistent": false
 },
-"permissions" : ["storage", "contextMenus",
-  "tabs",
-  "<all_urls>"
-],
+"permissions" : ["storage", "contextMenus", "tabs", "<all_urls>"],
 "icons": {
   "48": "16.png"
 }

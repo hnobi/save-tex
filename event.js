@@ -7,9 +7,20 @@ const contextMenuInfo = {
 chrome.contextMenus.create(contextMenuInfo);
 
 chrome.contextMenus.onClicked.addListener(function (selectedData) {
-  console.log('-------------')
+  selectedData.icon ='hello';
+  console.log(selectedData, '{{{{}}}}}')
   if (selectedData.menuItemId =='saveText' && selectedData.selectionText){
-    chrome.storage.sync.set({ 'datasaved': selectedData })}
-   
+    chrome.storage.sync.get(["storagekey"], function (result) {
+      
+     let array = []
+    if (result['storagekey']){
+      array = result['storagekey']
+    }
+
+      array.unshift(selectedData);
+     chrome.storage.sync.set({"storagekey": array });
+     });
+  }   
   
 });
+  

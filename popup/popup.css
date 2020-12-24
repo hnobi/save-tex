@@ -1,0 +1,49 @@
+.wrapper {
+  width: 300px;
+  height: 600px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+h1 {
+  /* font-family: helvetica; */
+  /* color: rgb(12, 34, 27); */
+  font-weight: bolder;
+  display: block;
+  text-align: center;
+  background-color: #141e24;
+  font-family: Open Sans, Segoe UI, Helvetica Neue, Ubuntu, sans-serif;
+  font-size: 25px;
+  color: #e96c4c;
+  padding: 10px 15px;
+  letter-spacing: 5px;
+}
+
+.item {
+  bottom: 5px;
+  padding: 4px 5px;
+  border: 1px solid #141e24;
+  margin-bottom: 7px;
+  overflow: scroll;
+  height: 60px;
+  background-color: rgb(231, 227, 227);
+  border-radius: 5px;
+}
+
+p {
+  color: #53a1b3;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+a {
+  text-align: center;
+  color: #e96c4c;
+
+}
+
+#text-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
